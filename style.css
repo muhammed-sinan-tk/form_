@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.min {
+    width: 70%;
+    height: 85vh;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+}
+
+.form input {
+    height: 30%;
+}
+
+.kl h4 {
+    color: grey;
+}
+
+.min button {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+
+.jk h4{
+    color: grey;
+}
+
+@media screen and (max-width:600px) {
+
+    .form {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+        margin-top: 30px;
+
+    }
+
+    .ni input {
+        height: 50%;
+        margin-top: 10px;
+        width: 300px;
+    }
+
+    .ni label {
+        position: relative;
+        top: 10px;
+    }
+
+    .min {
+        height: 500px;
+        position: relative;
+        top: 4%;
+        width: 350px;
+       
+    }
+
+    .min{
+        overflow-x: scroll;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .min button {
+        margin-top: 22%;
+        margin-left: -20px;
+    }
+
+    .jk h4{
+       position: relative;
+       top: 40px;
+    }
+}
+
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    .min {
+        position: relative;
+        top: 6%;
+        overflow-x: scroll;
+        height: 100vh;
+        width: 600px;
+        position: fixed;
+    }
+
+    .min button {
+        margin-top: 10%;
+    }
+
+}

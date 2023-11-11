@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="min">
+            <div class="kl">
+                <h2>Registraion</h2>
+                <br>
+                <h4>Personal Details</h4>
+            </div>
+            <br>
+            <div class="form">
+                <div class="ni">
+                    <label for="">Full Name <br></label>
+                    <input type="text" id="name" name="name" placeholder="enter your mame">
+                </div>
+                <div class="ni">
+                    <label for="">Date of birth <br></label>
+                    <input type="date" id="date" name="date" placeholder="enter date of birth" style="width: 170px;">
+                </div>
+                <div class="ni">
+                    <label for="">Email <br></label>
+                    <input type="email" id="email" name="email" placeholder="enter your email">
+                </div>
+            </div>
+            <div class="form">
+                <div class="ni">
+                    <label for="">Moblie Number <br></label>
+                    <input type="number" id="phone" name="phone" placeholder="enter phone number">
+                </div>
+                <div class="ni">
+                    <label for="">Gender <br></label>
+                    <input type="text" id="gender" name="gender" placeholder="enter your Gender">
+                </div>
+                <div class="ni">
+                    <label for="">Occuption <br></label>
+                    <input type="text" id="occ" name="occ" placeholder="enter your Occuption">
+                </div>
+            </div>
+          
+            <div class="jk">
+                <h4>Identity details</h4>
+            </div>
+            <br>
+            <div class="form">
+                <div class="ni">
+                    <label for=""> ID type <br></label>
+                    <input type="text" id="type" name="type" placeholder="enter ID type">
+                </div>
+                <div class="ni">
+                    <label for="">ID number<br></label>
+                    <input type="number" id="number" name="number" placeholder="enter your number">
+                </div>
+                <div class="ni">
+                    <label for="">Issus Autorilty <br></label>
+                    <input type="text" id="issus" name="issus" placeholder="enter issus autorilty">
+                </div>
+            </div>
+            <div class="form">
+                <div class="ni">
+                    <label for=""> Issus Date <br></label>
+                    <input type="date" id="data" name="data" placeholder="enter ID type" style="width: 170px;">
+                </div>
+                <div class="ni">
+                    <label for="">Issus State<br></label>
+                    <input type="number" id="state" name="state" placeholder="enter your number">
+                </div>
+                <div class="ni">
+                    <label for="">Expiry Date<br></label>
+                    <input type="date" id="ex" name="ex" placeholder="enter issus autorilty" style="width: 170px;">
+                </div>
+
+            </div>
+            <div>
+                <button onclick="bus()"> Next &rarr; </button>
+            </div>
+            <br><br>
+        </div>
+       
+    </div>
+</body>
+<script>
+    let name = document.getElementById("name").value;
+    let date = document.getElementById("date").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let gender = document.getElementById("gender").value;
+    let occ = document.getElementById("occ").value;
+    let type = document.getElementById("type").value;
+    let number = document.getElementById("number").value;
+    let issus = document.getElementById("issus").value;
+    let data = document.getElementById("data").value;
+    let state = document.getElementById("state").value;
+    let ex = document.getElementById("ex").value;
+
+    function bus() {
+        if (name === "" || date === "" || email === "" || phone === "" || gender === "" || occ === "" || type === "" || number === "" || issus === "" || data === "" || state === "" || ex === "") {
+            // alert("computer form");
+            // return false;
+            document.getElementById("name").style.borderColor = "red";
+            document.getElementById("date").style.borderColor = "red";
+            document.getElementById("email").style.borderColor = "red";
+            document.getElementById("phone").style.borderColor = "red";
+            document.getElementById("gender").style.borderColor = "red";
+            document.getElementById("occ").style.borderColor = "red";
+            document.getElementById("type").style.borderColor = "red";
+            document.getElementById("number").style.borderColor = "red";
+            document.getElementById("issus").style.borderColor = "red";
+            document.getElementById("data").style.borderColor = "red";
+            document.getElementById("state").style.borderColor = "red";
+            document.getElementById("ex").style.borderColor = "red";
+        }
+    }
+</script>
+
+</html>
